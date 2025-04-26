@@ -10,9 +10,30 @@ body{
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 40px;
     box-shadow: 0px -2px 5px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+.rodape a{
+    display: inline-block;
+    margin-right: 10px;
+}
+.rodape a:last-child{
+    margin-right: 0px;
+}
+.rodape a img{
+    vertical-align: middle;
+}
+.discord,.git,.linke{
+    position: static;
+    right: auto;
+}
+
+.discord{width: 70px;}
+.git{width: 60px;}
+.linke{width: 100px;}
+
 .caixa_fundo_apresentacao{
     width: 400px;
     padding: 30px;
@@ -28,38 +49,17 @@ height: 22px;
 width: 60px;
 height: 22px;
 }
-#destaque{
-    color: blue; 
-}
-.discord{
-    width: 70px;
-    position: fixed;
-    bottom: 4px;
-    right: 10px;
-}
-.git{
-    width: 60px;
-    position: fixed;
-    bottom: 10px;
-    right: 100px; 
-}
-.linke{
-    width: 90px;
-    position: fixed;
-    bottom: -7px;
-    right: 168px;
-}
 .cssClass{
-    position: fixed;
-    right: 20px;
-    top: 20px;
     width: 200px;
     height: 300px;
+    right: 20px;
 }
 .htmlClass{
-    position: fixed;
-    right: 260px;
-    top: 20px;
     width: 300px;
     height: 300px;
+    right: 220px;
+}
+.cssClass,.htmlClass{
+    top: 10px;
+    position: fixed;
 }

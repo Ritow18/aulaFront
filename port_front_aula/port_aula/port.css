@@ -1,0 +1,34 @@
+#lis_membros{
+    border: 1px solid #232323;
+    padding: 0px;
+    }
+#infP{
+    width: 100px;
+}
+.caixa-texto {
+    display: none; /* Oculta a caixa de texto inicialmente */
+    position: absolute;
+    background-color: rgb(240, 128, 128);
+    border: 1px solid #ccc;
+    padding: 10px;
+    top: 35px; 
+    left: 0px; 
+  }
+body{
+    background-color: #F8B9FF;
+    color: black;
+}
+h1{
+    color: #232323
+}
+#a-mainNome{
+    color:peru
+}
+/* #blz{
+    width: 700px;
+    height: 250px;
+} */
+span {
+    border: 1px solid #22d4fd;
+    padding: 2px;
+}

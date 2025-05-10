@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário de contato</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="tabForm">
+                <form action="" method="post" onsubmit="js_qlqr">
+                    <br>
+                    <input type="text" name="Nome" id="Nome" class="inINf" >
+                    <label for="Nome">Nome</label>
+                    <br>
+                    <input type="text" name="Gmail" id="Gmail" class="inINf" >
+                    <label for="Gmail">Gmail</label>
+                    <br>
+                    <input type="text" name="Phone" id="Phone" class="inINf" >
+                    <label for="Phone">Telefone</label>
+                    <br>
+                    <input type="text" name="Mensagem" id="Mensagem" class="inINf" >
+                    <label for="Mensagem">Comentario</label>
+                    <br>
+                    <input type="numeric" name="Idade" id="Idade" class="inINf" >
+                    <label for="Idade">Idade</label>
+                    <br>
+                    <input type="text" name="lp_contato" id="lp_contato" class="inINf" >
+                    <label for="lp_contato">prererencia de contato</label>
+                    <br>    
+                    <button type="submit" class="bot">Enviar</button>
+                    <button type="reset" class="bot">Limpar</button>
+                </form>
+            </td>
+            <td class="tabGrid">
+            <table>
+                <thead class="cabInf">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Gmail</th>
+                        <th>Phone</th>
+                        <th>Mensagem</th>
+                        <th>Idade</th>
+                        <th>método de contato</th>
+                        <th>Edit/del</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        <tr>
+                        <td class="campo"></td>
+                        <td class="campo"></td>
+                        <td class="campo"></td>
+                        <td class="campo"></td>
+                        <td class="campo"></td>
+                        <td class="campo"></td>
+                        <td class="edt/del">
+                            <input type="text" name="edicao" id="edicao">
+                            <input type="text" name="delete" id="delete">
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script>
+        let usuario = " aaaasassdaddsadadasdasdas";ano = 2025;
+        const aviso = "você está na pagina de contato";
+            // => "=" atribui   =>"=="compara o conteudo string a =2025; int b = 2025  a==b(true) => "===" compara variaveis 
+            // string a = 2025 int b = 2025 a===b(false)
+        if(usuario === ano){
+
+        }
+
+        alert(aviso + "de" +usuario +" em "+ ano);
+    </script>
+</body>
+</html>

@@ -8,32 +8,40 @@
 </head>
 <body>
     <table>
+        
         <tr>
+
             <td class="tabForm">
-                <form action="" method="post" onsubmit="js_qlqr">
+                <form action="" method="post" onsubmit="contato.Enviar()">
                     <br>
-                    <input type="text" name="Nome" id="Nome" class="inINf" >
                     <label for="Nome">Nome</label>
+                    <input type="text" name="Nome" id="Nome" class="inINf" >                  
                     <br>
-                    <input type="text" name="Gmail" id="Gmail" class="inINf" >
                     <label for="Gmail">Gmail</label>
+                    <input type="email" name="Gmail" id="Gmail" class="inINf" >                   
                     <br>
-                    <input type="text" name="Phone" id="Phone" class="inINf" >
                     <label for="Phone">Telefone</label>
+                    <input type="tel" name="Phone" id="Phone" class="inINf" >
                     <br>
-                    <input type="text" name="Mensagem" id="Mensagem" class="inINf" >
-                    <label for="Mensagem">Comentario</label>
+                    <label for="mensagem">Mensagem</label>                    
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
                     <br>
-                    <input type="numeric" name="Idade" id="Idade" class="inINf" >
                     <label for="Idade">Idade</label>
+                    <input type="numeric" name="Idade" id="Idade" class="inINf" >
                     <br>
-                    <input type="text" name="lp_contato" id="lp_contato" class="inINf" >
-                    <label for="lp_contato">prererencia de contato</label>
+                    <p>Tipo de contato: </p>
+                    <label for="">whatsapp</label>
+                    <input type="radio" name="fav_html" id="html" value="HTML">
+                    <label for="">Discord</label>
+                    <input type="radio" name="fav_html" id="html" value="HTML">
+                    <label for="">email</label>
+                    <input type="radio" name="fav_html" id="html" value="HTML">
                     <br>    
                     <button type="submit" class="bot">Enviar</button>
                     <button type="reset" class="bot">Limpar</button>
                 </form>
             </td>
+
             <td class="tabGrid">
             <table>
                 <thead class="cabInf">
@@ -65,16 +73,6 @@
             </td>
         </tr>
     </table>
-    <script>
-        let usuario = " aaaasassdaddsadadasdasdas";ano = 2025;
-        const aviso = "você está na pagina de contato";
-            // => "=" atribui   =>"=="compara o conteudo string a =2025; int b = 2025  a==b(true) => "===" compara variaveis 
-            // string a = 2025 int b = 2025 a===b(false)
-        if(usuario === ano){
-
-        }
-
-        alert(aviso + "de" +usuario +" em "+ ano);
-    </script>
+    <script type="text/javascript" src="form.js"></script>
 </body>
 </html>

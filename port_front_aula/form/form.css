@@ -1,12 +1,43 @@
-body{
-    background-color: antiquewhite;
+.container {
+    display: flex;
+    width: 100%;
 }
-.bot{
-    width: 90px;
-    height: 30px;
-    border-radius: 10px;
-    margin-top: 5px;
+
+.form-container {
+    flex: 1;
+    padding-right: 20px; /* Adiciona um espaço entre as duas partes */
 }
-.inINf{
-    margin-top: 10px;
+.grid-container {
+    flex: 1;
+}
+.inINf {
+    width: calc(100% - 16px); /* Ajusta a largura dos inputs */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+.bot {
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+.edt_del_inputs {
+    width: calc(50% - 5px); /* Ajusta a largura dos inputs de edição/deleção */
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 5px;
 }

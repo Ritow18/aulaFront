@@ -20,7 +20,6 @@ body {
 header {
   background: #eb632d;
   color: #fff7ed;
-  padding: 1.5rem 0;
   box-shadow: 0 2px 8px rgb(194 65 12 / 0.3);
   position: sticky;
   top: 0;
@@ -29,9 +28,64 @@ header {
 }
 .header-flex {
   display: flex;
-  align-items: center;
+  align-items: center; 
   gap: 22px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
+}
+
+header h1 {
+  margin-right: auto; 
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end;
+  gap: 5px; 
+  color: #ffe8d6;
+  font-size: 0.9rem;
+}
+
+.contact-info, .operating-hours {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end; 
+ color: #ffe8d6;
+ font-size: 0.9rem;
+}
+
+.contact-info p, .operating-hours p {
+ display: flex;
+ align-items: center;
+ gap: 5px;
+ margin-bottom: 3px;
+}
+
+.contact-info i, .operating-hours i {
+ color: #fb923c;
+ font-size: 0.8rem;
+}
+
+@media (max-width: 900px) {
+ .header-flex {
+ flex-direction: column;
+ gap: 10px;
+ align-items: flex-start;
+ }
+ .logo-antigo {
+ height: 48px;
+ margin-bottom: 2px;
+ }
+ .header-info {
+ margin-left: 0; 
+ flex-direction: column;
+ align-items: flex-start; 
+ gap: 10px;
+ margin-top: 10px;
+ }
+ .contact-info, .operating-hours {
+ align-items: flex-start; 
+ }
 }
 .logo-antigo {
   height: 65px;
@@ -55,9 +109,6 @@ header h1 {
   font-weight: 700;
   letter-spacing: 1.2px;
   color: #ffffff;
-}
-header nav {
-  margin-top: 10px;
 }
 header nav a {
   color: #ffe8d6;
@@ -371,17 +422,30 @@ footer {
 @media (max-width: 900px) {
   .header-flex {
     flex-direction: column;
-    gap: 10px;
     align-items: flex-start;
+    gap: 15px; 
   }
   .logo-antigo {
     height: 48px;
-    margin-bottom: 2px;
+  }
+  header h1 {
+    margin-right: 0; 
+    margin-bottom: 0; 
+  }
+  .header-info {
+    align-items: flex-start; 
+    margin-top: 5px; 
+  }
+  .contact-info, .operating-hours {
+    align-items: flex-start;
   }
   header nav {
-    margin-top: 10px;
+    margin-top: 0px; 
+    justify-content: center; 
+    width: 100%; 
   }
 }
+
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -395,12 +459,13 @@ footer {
     align-items: center;
   }
   header nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 5px; 
   }
   header nav a {
-    margin: 10px 12px;
+    margin: 0; 
+    padding: 8px 0; 
   }
   .footer-content {
     gap: 0.5rem;
